@@ -1,0 +1,615 @@
+color: white;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+font-size: 16px;
+font-weight: bold;
+transition: all 0.3s;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-box button:hover {
+background: #218838;
+transform: translateY(-2px);
+}
+
+/* Container */
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 40px 20px;
+}
+
+/* Stats Section */
+.stats {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 25px;
+margin: 40px 0;
+}
+
+.stat-card {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+color: white;
+padding: 30px;
+border-radius: 15px;
+text-align: center;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+transition: all 0.3s;
+}
+
+.stat-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.stat-card i {
+font-size: 48px;
+margin-bottom: 15px;
+opacity: 0.9;
+}
+
+.stat-card h3 {
+font-size: 36px;
+margin-bottom: 10px;
+}
+
+.stat-card p {
+font-size: 16px;
+opacity: 0.9;
+}
+
+/* Kategori Section */
+.kategori-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 25px;
+margin: 30px 0;
+}
+
+.kategori-card {
+background: white;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+transition: all 0.3s;
+border-left: 5px solid #1e3c72;
+}
+
+.kategori-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.kategori-card i {
+font-size: 36px;
+color: #1e3c72;
+margin-bottom: 15px;
+}
+
+.kategori-card h3 {
+color: #1e3c72;
+margin-bottom: 15px;
+font-size: 20px;
+}
+
+.kategori-card p {
+color: #666;
+margin-bottom: 15px;
+}
+
+.kategori-card a {
+display: inline-block;
+color: #1e3c72;
+text-decoration: none;
+font-weight: bold;
+transition: all 0.3s;
+}
+
+.kategori-card a:hover {
+color: #2a5298;
+text-decoration: underline;
+}
+
+/* Dokumen Terbaru */
+.dokumen-list {
+background: white;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+}
+
+.dokumen-item {
+padding: 20px;
+border-bottom: 1px solid #eee;
+transition: all 0.3s;
+}
+
+.dokumen-item:last-child {
+border-bottom: none;
+}
+
+.dokumen-item:hover {
+background: #f8f9fa;
+}
+
+.dokumen-item h4 {
+color: #1e3c72;
+margin-bottom: 10px;
+font-size: 18px;
+}
+
+.dokumen-meta {
+display: flex;
+gap: 20px;
+font-size: 14px;
+color: #666;
+margin-bottom: 10px;
+flex-wrap: wrap;
+}
+
+.dokumen-meta span {
+display: flex;
+align-items: center;
+gap: 5px;
+}
+
+.btn-download {
+display: inline-block;
+padding: 8px 20px;
+background: #28a745;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+font-size: 14px;
+transition: all 0.3s;
+}
+
+.btn-download:hover {
+background: #218838;
+transform: translateX(5px);
+}
+
+/* Section Title */
+.section-title {
+font-size: 32px;
+color: #1e3c72;
+margin-bottom: 30px;
+padding-bottom: 15px;
+border-bottom: 3px solid #1e3c72;
+text-align: center;
+}
+
+/* Info Section */
+.info-section {
+background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+padding: 50px 20px;
+margin: 40px 0;
+}
+
+.info-grid {
+max-width: 1200px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px;
+}
+
+.info-card {
+background: white;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+color: #1e3c72;
+margin-bottom: 15px;
+font-size: 22px;
+}
+
+.info-card p,
+.info-card ul {
+color: #666;
+line-height: 1.8;
+}
+
+.info-card ul {
+list-style-position: inside;
+padding-left: 0;
+}
+
+/* Footer */
+footer {
+background: #164067;
+color: white;
+padding: 40px 20px 20px;
+}
+
+.footer-content {
+max-width: 1200px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 30px;
+margin-bottom: 30px;
+}
+
+.footer-section h3 {
+margin-bottom: 20px;
+font-size: 20px;
+}
+
+.footer-section p,
+.footer-section a {
+color: rgba(255, 255, 255, 0.8);
+text-decoration: none;
+display: block;
+margin-bottom: 10px;
+line-height: 1.6;
+}
+
+.footer-section a:hover {
+color: white;
+text-decoration: underline;
+}
+
+.footer-bottom {
+max-width: 1200px;
+margin: 0 auto;
+text-align: center;
+padding-top: 20px;
+border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-links {
+display: flex;
+gap: 15px;
+margin-top: 15px;
+}
+
+.social-links a {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 40px;
+height: 40px;
+background: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+transition: all 0.3s;
+}
+
+.social-links a:hover {
+background: rgba(255, 255, 255, 0.3);
+transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+.header-content {
+flex-direction: column;
+text-align: center;
+}
+
+.header-text h1 {
+font-size: 22px;
+}
+
+.hero h2 {
+font-size: 28px;
+}
+
+nav ul {
+flex-direction: column;
+}
+
+nav ul li a {
+text-align: center;
+}
+
+.search-box {
+flex-direction: column;
+}
+
+.search-box button {
+width: 100%;
+}
+}
+</style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo"><img src="img/Kabupaten Maybrat (1).png" alt="Logo Kabupaten Maybrat"></div>
+                <div class="header-text">
+                    <h1>E-JDIH Kabupaten Maybrat</h1>
+                    <p>Jaringan Dokumentasi dan Informasi Hukum</p>
+                    <p>Bagian Hukum Sekretariat Daerah Kabupaten Maybrat 2025</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#beranda" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+            <li><a href="Perbup SHBJ 2023.pdf"><i class="fas fa-book"></i> Produk Hukum</a></li>
+            <li><a href="#monografi"><i class="fas fa-file-alt"></i> Monografi</a></li>
+            <li><a href="#artikel"><i class="fas fa-newspaper"></i> Artikel</a></li>
+            <li><a href="#tentang"><i class="fas fa-info-circle"></i> Tentang</a></li>
+            <li><a href="#kontak"><i class="fas fa-envelope"></i> Kontak</a></li>
+        </ul>
+    </nav>' '
+
+    <!-- Hero Section -->
+    <section class="hero" id="beranda">
+        <h2>Selamat Datang di E-JDIH Kabupaten Maybrat</h2>
+        <p>Portal resmi dokumentasi dan informasi produk hukum daerah Kabupaten Maybrat yang terintegrasi, transparan,
+            dan mudah diakses oleh masyarakat</p>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Cari peraturan, undang-undang, keputusan...">
+            <button onclick="searchDokumen()"><i class="fas fa-search"></i> Cari</button>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <div class="container">
+        <div class="stats">
+            <div class="stat-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                <i class="fas fa-file-contract"></i>
+                <h3>2</h3>
+                <p>Peraturan Daerah</p>
+            </div>
+            <div class="stat-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                <i class="fas fa-gavel"></i>
+                <h3>1</h3>
+                <p>Keputusan Bupati</p>
+            </div>
+            <div class="stat-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                <i class="fas fa-book-open"></i>
+                <h3>5</h3>
+                <p>Peraturan Bupati</p>
+            </div>
+            <div class="stat-card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                <i class="fas fa-download"></i>
+                <h3>1</h3>
+                <p>Total Unduhan</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kategori Produk Hukum -->
+    <div class="container" id="produk-hukum">
+        <h2 class="section-title">Kategori Produk Hukum</h2>
+        <div class="kategori-grid">
+            <div class="kategori-card">
+                <i class="fas fa-landmark"></i>
+                <h3>Peraturan Daerah</h3>
+                <p>Kumpulan Peraturan Daerah (Perda) Kabupaten Maybrat yang telah ditetapkan dan disahkan</p>
+                <a href="#"><i class="fas fa-arrow-right"></i> Lihat Semua</a>
+            </div>
+            <div class="kategori-card">
+                <i class="fas fa-file-signature"></i>
+                <h3>Peraturan Bupati</h3>
+                <p>Dokumen Peraturan Bupati (Perbup) yang mengatur kebijakan daerah Kabupaten Maybrat</p>
+                <a href="#"><i class="fas fa-arrow-right"></i> Lihat Semua</a>
+            </div>
+            <div class="kategori-card">
+                <i class="fas fa-stamp"></i>
+                <h3>Keputusan Bupati</h3>
+                <p>Keputusan-keputusan yang dikeluarkan oleh Bupati Maybrat dalam menjalankan pemerintahan</p>
+                <a href="#"><i class="fas fa-arrow-right"></i> Lihat Semua</a>
+            </div>
+            <div class="kategori-card">
+                <i class="fas fa-scroll"></i>
+                <h3>Instruksi Bupati 2025</h3>
+                <p>Instruksi dan arahan Bupati kepada jajaran pemerintahan daerah</p>
+                <a
+                    href="https://www.papuaspiritnews.com/bupati-maybrat-serahkan-nota-dinas-dan-ingatkan-asn-tingkatkan-disiplin-serta-pelayanan-publik/"><i
+                        class="fas fa-arrow-right"></i> Lihat Semua</a>
+            </div>
+            <div class="kategori-card">
+                <i class="fas fa-balance-scale"></i>
+                <h3>Produk Hukum DPRK</h3>
+                <p>Peraturan dan keputusan yang dihasilkan oleh DPRK Kabupaten Maybrat 2025</p>
+                <a href="https://sorongnews.com/dprk-maybrat-mulai-bahas-apbd-perubahan-2025/"><i
+                        class="fas fa-arrow-right"></i> Lihat Semua</a>
+            </div>
+            <div class="kategori-card">
+                <i class="fas fa-clipboard-list"></i>
+                <h3>Dokumen Lainnya</h3>
+                <p>Dokumen hukum pendukung lainnya termasuk monografi dan artikel hukum</p>
+                <a href="#"><i class="fas fa-arrow-right"></i> Lihat Semua</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dokumen Terbaru -->
+    <div class="container">
+        <h2 class="section-title">Dokumen Hukum Kabupaten Maybrat</h2>
+        <div class="dokumen-list">
+            <div class="dokumen-item">
+                <h4>SURAT KEPUTUSAN BUPATI NOMOR: 420/012/KPTS/BUP-MBT/11/TAHUN 2021 TENTANG PEMBERIAN IZIN OPERASIONAL
+                    SEKOLAH PAUD GECEMANI FIANE</h4>
+                <div class="dokumen-meta">
+                    <span><i class="fas fa-calendar"></i> 22 Februari 2021</span>
+                    <span><i class="fas fa-tag"></i> Keputusan Bupati</span>
+                    <span><i class="fas fa-eye"></i> 6 views</span>
+                </div>
+            </div>
+            <a href="SURAT KEPUTUSAN BUPATI NOMOR.pdf" class="btn-download"><i class="fas fa-download"></i> Unduh
+                PDF</a>
+        </div>
+        <div class="dokumen-item">
+            <h4>PERATURAN BUPATI KABUPATEN MAYBRAT NOMOR 20B TAHUN 2022 TENTANG
+                PEDOMAN PENGELOLAAN HIBAH DAN BANTUAN SOSIAL YANG BERSUMBER DARI ANGGARAN PENDAPATAN DAN BELANJA DAERAH
+            </h4>
+            <div class="dokumen-meta">
+                <span><i class="fas fa-calendar"></i> 31 Agustus 2022</span>
+                <span><i class="fas fa-tag"></i> Peraturan Bupati</span>
+                <span><i class="fas fa-eye"></i> 8 views</span>
+            </div>
+            <a href="PERBUB 20B 2022.pdf" class="btn-download"><i class="fas fa-download"></i> Unduh PDF</a>
+        </div>
+        <div class="dokumen-item">
+            <h4>PERATURAN BUPATI NO 8 TAHUN 2018 TENTANG TATA CARA ALOKASI DAN PENYALURAN ALOKASI DANA KAMPUNG (ADK)
+                YANG BERSUMBER DARI APBD BAGI SETIAP KAMPUNG DI KABUPATEN MAYBRAT</h4>
+            <div class="dokumen-meta">
+                <span><i class="fas fa-calendar"></i> 15 Januari 2018</span>
+                <span><i class="fas fa-tag"></i> Peraturan Bupati</span>
+                <span><i class="fas fa-eye"></i> 12 views</span>
+            </div>
+            <a href="Perbup Maybrat Nomor 8 Tahun 2018 tentang Tata Cara Alokasi Serta Penyaluran ADK dari APBD.pdf"
+                class="btn-download"><i class="fas fa-download"></i> Unduh PDF</a>
+        </div>
+        <div class="dokumen-item">
+            <h4>PERATURAN DAERAH KABUPATEN MAYBRAT
+                NOMOR 7 TAHUN 2024
+                TENTANG
+                PENGAKUAN, PERLINDUNGAN DAN PEMBERDAYAAN HAK MASYARAKAT
+                HUKUM ADAT DI KABUPATEN MAYBRAT</h4>
+            <div class="dokumen-meta">
+                <span><i class="fas fa-calendar"></i> 1 Maret 2024</span>
+                <span><i class="fas fa-tag"></i> Peraturan Daerah</span>
+                <span><i class="fas fa-eye"></i> 11 views</span>
+            </div>
+            <a href="1.pdf" class="btn-download"><i class="fas fa-download"></i> Unduh PDF</a>
+        </div>
+        <div class="dokumen-item">
+            <h4>PERATURAN BUPATI MAYBRAT NOMOR 101 TAHUN 2023
+                TENTANG
+                STANDAR HARGA SATUAN DI LINGKUNGAN PEMERINTAH KABUPATEN MAYBRAT TAHUN ANGGARAN 2023</h4>
+            <div class="dokumen-meta">
+                <span><i class="fas fa-calendar"></i> 10 November 2023</span>
+                <span><i class="fas fa-tag"></i> Instruksi Bupati</span>
+                <span><i class="fas fa-eye"></i> 10 views</span>
+            </div>
+            <a href="Perbup SHBJ 2023.pdf" class="btn-download"><i class="fas fa-download"></i> Unduh PDF</a>
+        </div>
+    </div>
+    </div>
+
+    <!-- Info Section -->
+    <section class="info-section" id="tentang">
+        <div class="info-grid">
+            <div class="info-card">
+                <h3><i class="fas fa-bullseye"></i> Visi</h3>
+                <p>Mewujudkan sistem dokumentasi dan informasi hukum yang terintegrasi, transparan, dan mudah diakses
+                    untuk mendukung good governance di Kabupaten Maybrat.</p>
+            </div>
+            <div class="info-card">
+                <h3><i class="fas fa-tasks"></i> Misi</h3>
+                <ul>
+                    <li>Mengelola dokumentasi produk hukum secara sistematis</li>
+                    <li>Menyediakan akses informasi hukum yang cepat dan akurat</li>
+                    <li>Meningkatkan kesadaran hukum masyarakat</li>
+                    <li>Mendukung transparansi penyelenggaraan pemerintahan</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3><i class="fas fa-cogs"></i> Layanan</h3>
+                <ul>
+                    <li>Penyediaan database produk hukum daerah</li>
+                    <li>Layanan konsultasi hukum</li>
+                    <li>Publikasi artikel dan monografi hukum</li>
+                    <li>Sosialisasi peraturan perundang-undangan</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monografi & Artikel -->
+    <div class="container" id="artikel">
+        <h2 class="section-title">Artikel & Monografi Hukum</h2>
+        <div class="kategori-grid">
+            <div class="kategori-card">
+                <i class="fas fa-newspaper"></i>
+                <h3>Artikel Hukum</h3>
+                <p>Kumpulan artikel dan tulisan seputar perkembangan hukum daerah dan nasional</p>
+                <a href="https://portalhukum.id/"><i class="fas fa-arrow-right"></i> Baca Artikel</a>
+            </div>
+            <div class="kategori-card">
+                <i class="fas fa-book"></i>
+                <h3>Monografi Hukum</h3>
+                <p>Kajian mendalam terhadap berbagai aspek hukum dan peraturan perundangan</p>
+                <a
+                    href="Monografi hukum adalah publikasi ilmiah yang menyajikan kajian mendalam dan komprehensif mengenai suatu topik hukum atau bidang hukum tertentu.pdf"><i
+                        class="fas fa-arrow-right"></i> Lihat Monografi</a>
+            </div>
+            <div class="kategori-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Materi Sosialisasi</h3>
+                <p>Materi dan dokumentasi kegiatan sosialisasi peraturan kepada masyarakat</p>
+                <a href="Materi sosialisasi peraturan mencakup isi peraturan.pdf"><i class="fas fa-arrow-right"></i>
+                    Download Materi</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tentang E-JDIH Maybrat</h3>
+                <p>E-JDIH Kabupaten Maybrat adalah portal resmi yang menyediakan akses informasi dan dokumentasi produk
+                    hukum daerah Kabupaten Maybrat, Papua Barat Daya.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@BAGHUKUMSEKDAERAHMAYBRAT"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak Kami</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Kantor Bupati Maybrat<br>Jl. Raya Kumurkek Distrik Aifat
+                    kabupaten
+                    <br>Kabupaten Maybrat, Papua Barat Daya
+                </p>
+                <p><i class="fas fa-phone"></i> (0986) 2210572</p>
+                <p><i class="fas fa-envelope"></i> hukum@maybrat.go.id</p>
+            </div>
+            <div class="footer-section">
+                <h3>Link Terkait</h3>
+                <a href="https://setda.maybratkab.go.id/beranda">Website Kabupaten Maybrat</a>
+                <a href="https://jdihn.go.id/">JDIH Nasional</a>
+                <a href="https://jdih.papuabaratdayaprov.go.id/">JDIH Provinsi Papua Barat Daya</a>
+                <a href="https://kemenkum.go.id/">Kementerian Hukum dan HAM</a>
+                <a href="https://jdih.setneg.go.id/">Portal JDIH Indonesia</a>
+            </div>
+            <div class="footer-section">
+                <h3>Jam Layanan</h3>
+                <p><strong>Senin - Jumat</strong><br>08:00 - 16:00 WIT</p>
+                <p><strong>Sabtu - Minggu</strong><br>Tutup</p>
+                <p style="margin-top: 20px;"><i class="fas fa-info-circle"></i> Layanan online 24/7</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 E-JDIH Kabupaten Maybrat. Bagian Hukum Sekretariat Daerah Kabupaten Maybrat. All Rights
+                Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll untuk navigasi
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active navigation
+        const sections = document.quer
+        scrool behavior
